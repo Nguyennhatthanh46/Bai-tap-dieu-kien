@@ -1,0 +1,22 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+int i = 0;
+switch (i)
+{
+case '0': cout << "A"; break;
+case '1': cout << "B"; break;
+default: cout<< "ABC";
+}
+return 0;
+}
+
+/*
+Trong câu lệnh switch:
+case '0': và case '1': so sánh i với các ký tự '0' (có mã ASCII là 48) và '1' (có mã ASCII là 49), chứ không phải với giá trị số nguyên 0.
+Vì i có giá trị 0, nó không phù hợp với case '0' hay case '1', nên chương trình sẽ chuyển sang nhãn default.
+
+KẾT QUẢ: ABC
+*/
+
