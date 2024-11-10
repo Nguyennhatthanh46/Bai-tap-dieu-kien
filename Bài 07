@@ -1,0 +1,11 @@
+#include <iostream>
+int main() {
+int a, b;
+if ((a = 5) || (b = 0))
+std::cout << "if";
+else
+std::cout << "else";
+return 0;
+}
+
+/* KẾT QUẢ: if */
