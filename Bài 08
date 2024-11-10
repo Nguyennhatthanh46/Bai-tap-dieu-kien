@@ -1,0 +1,34 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+int i= 3;
+if (!i)
+i++;
+i++;
+if (i == 3)
+i += 2;
+i += 2;
+cout << i;
+return 0;
+}
+/*
+1.Điều kiện đầu tiên:
+if (!i)
+    i++;
+Ở đây, i có giá trị 3, nên !i là false (vì i khác 0), do đó, khối if không được thực thi và i giữ nguyên giá trị 3.
+
+2.Tăng i lên 1:
+i++;
+Dòng này tăng giá trị của i lên 1, nên i sẽ là 4.
+Điều kiện thứ hai:
+if (i == 3)
+    i += 2;
+Ở đây, kiểm tra nếu i bằng 3. Nhưng i hiện tại là 4, nên điều kiện này cũng không được thực hiện.
+
+3.Tăng i lên 2:
+i += 2;
+Dòng này tăng i thêm 2, nên i sẽ là 6.
+
+KẾT QUẢ: 6
+*/
