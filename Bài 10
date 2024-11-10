@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+int a = 2, b = 0;
+switch (a = 6)
+{
+case 2:b = 1;
+case 5:b = 2;
+default:b = 3;
+}
+cout << b;
+return 0;
+}
+
+/*
+a được gán giá trị 6. Không thỏa mãn bất cứ lệnh nào đến khi gặp default. 
+KẾT QUẢ: 3.
+*/
