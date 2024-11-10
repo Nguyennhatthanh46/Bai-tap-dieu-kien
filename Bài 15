@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std; 
+
+void main()
+{
+
+     int a, b;
+
+     a = 100;
+
+     b = 56;
+
+     cout << (a < b) ? a : b;
+
+}
+
+/* KẾT QUẢ: BỊ LỖI do hàm Void main. Nên thay lại bằng hàm int main.
+
+#include <iostream>
+
+using namespace std; 
+
+int main()
+{
+
+     int a, b;
+
+     a = 100;
+
+     b = 56;
+
+     cout << (a < b) ? a : b;
+
+}
+
+"(cout << (a < b)) ? a : b;"
+-Điều này có nghĩa là cout << (a < b) sẽ được thực hiện trước, sau đó mới đến toán tử điều kiện ? a : b.
+a = 100 và b = 56, do đó (a < b) là sai (false).
+-Khi a < b là false, giá trị của (a < b) là 0.
+-Kết quả của cout << (a < b) sẽ là in 0 ra màn hình.
+-Sau khi cout << (a < b) thực thi, toán tử ? a : b không có ý nghĩa và sẽ không ảnh hưởng gì đến chương trình.
+
+KẾT QUẢ: 0
+*/
