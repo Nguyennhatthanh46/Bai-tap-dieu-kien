@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int x=3;
+int main() {
+cout << x << ", ";
+int x=5;
+{
+cout << x << ", ";
+int x=7;
+cout << x <<", ";
+cout << ::x << ", ";
+}
+cout << x << ", ";
+cout << ::x;
+}
+
+
+/*
+Toán tử :: (toán tử phạm vi) để truy cập vào biến x toàn cục.
+Từng phần:
+1.cout << x << ", "; đầu tiên in ra 3, vì nó truy cập biến toàn cục x.
+2.cout << x << ", "; trong khối lệnh in ra 5, là giá trị của biến x trong main().
+3.cout << x << ", "; tiếp theo trong khối lệnh in ra 7, là giá trị của biến x trong khối lệnh.
+4.cout << ::x << ", "; in ra 3, là giá trị của biến x toàn cục.
+5.cout << x << ", "; sau khi ra khỏi khối lệnh in ra 5, là giá trị của biến x trong main().
+6.cout << ::x; in ra 3, là giá trị của biến x toàn cục.
+
+KẾT QUẢ: 3, 5, 7, 3, 5, 3
+*/
