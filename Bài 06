@@ -1,0 +1,18 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+int i = 3;
+switch (i)
+{
+case 0 + 1: cout << "A"; break;
+case 1 + 2: cout << "B"; break;
+default: cout << "ABC";
+}
+return 0;
+}
+
+/* 
+i nhận giá trị 3. Tương ứng case 1+2.
+KẾT QUẢ: B
+*/
