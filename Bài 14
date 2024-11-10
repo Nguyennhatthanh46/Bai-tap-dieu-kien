@@ -1,0 +1,18 @@
+#include <iostream> 
+using namespace std;
+int main() {
+int x = 0, y = 0;
+if (x == 0 || ++y)
+cout << "x=" << x;
+cout << " y=" << y;
+return 0;
+}
+
+/*
+Câu lệnh if: if (x == 0 || ++y)
+Phép so sánh đầu tiên: x == 0 là đúng (True) vì x có giá trị là 0.
+Toán tử logic OR (||): Trong C++, khi sử dụng toán tử OR, nếu biểu thức bên trái là true, thì biểu thức bên phải sẽ không được đánh giá.
+Vì x == 0 là đúng, nên ++y sẽ không được thực hiện, nghĩa là y vẫn giữ nguyên giá trị 0.
+
+KẾT QUẢ: x=0 y=0
+*/
