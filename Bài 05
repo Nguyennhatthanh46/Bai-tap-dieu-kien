@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int x = 0;
+int y = 2;
+int z = (++x, ++y);
+int t = (y = 3, y + 1);
+cout <<x<<y<<z<<t;
+     return 0;
+}
+
+/*
+Tăng x và y lên 1 và 3 rồi áp dụng kết quả ưu tiên toán tử theo bên phải dấu ,. "TĂNG XONG GÁN"
+Rồi gán cho z,t.
+KẾT QUẢ: 1334.
+*/
+
+/*
+Nếu đổi thành. 
+#include <iostream>
+using namespace std;
+int main()
+{
+int x = 0;
+int y = 2;
+int z = (x++, y++);
+int t = (y = 3, y + 1);
+cout <<x<<y<<z<<t;
+     return 0;
+}
+
+Các giá trị thay đổi.
+x và y được gán giá trị vào z rồi mới tăng. 
+Cụ thể x = 0, y = 2 rồi chúng được gán và z. z sẽ nhận giá trị 2. Rồi x và y mới tăng lên 1 và 3. "GÁN XONG TĂNG"
+Sau đó y sẽ nhận giá trị 3 rồi gán vào t.
+
+KẾT QUẢ: 1324
+*/
