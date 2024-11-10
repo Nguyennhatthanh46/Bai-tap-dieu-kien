@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std;
+int main() 
+{
+int i= 10, j = 20;
+if (i = 20)
+cout << "Hello";
+else
+cout <<"Hi";
+return 0;
+}
+
+/*
+i = 20 là phép gán, không phải dấu == nên kết quả được xem là 1 số nên điều kiện luôn đúng.
+KẾT QUẢ: Hello.
+*/
