@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+int a=3, b=5, c=1;
+c= (a<b) ? a+1: b + 1;
+cout << c;
+return 0;
+}
+
+/*
+a<b nên điều kiện đúng, thực hiện lệnh phía bên phải dấu .
+KẾT QUẢ: 4
+*/
