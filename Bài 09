@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std;
+int main()
+{
+int a = 15, b = 10, c = 5;
+if (a > b > c)
+cout << "True";
+else
+cout << "False";
+return 0;
+}
+
+/*
+Do a > b nên điều kiện đúng. Kết quả là 1. Mà 1 > c (= 5) là sai nên thực hiện lệnh False.
+KẾT QUẢ: False
+*/
